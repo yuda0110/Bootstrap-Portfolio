@@ -1,0 +1,221 @@
+/* ========== VARIABLES ========== */
+:root {
+    --color-teal: #4aaaa5;
+    --color-orange: #e1821d;
+    --color-white: #fff;
+    --color-light-gray1: #dedede;
+    --color-light-gray2: #ddd;
+    --color-light-gray3: #ccc;
+    --color-dark-gray1: #777;
+    --color-dark-gray2: #666;
+
+    --font-heading: 'Georgia', Times, Times New Roman, serif;
+    --font-default: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+
+/* ========== COMMON ========== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-default);
+    line-height: 1.6;
+    background: url("../images/leaves-pattern.png") repeat;
+    color: var(--color-dark-gray1);
+    position: relative;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-heading);
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: var(--color-teal);
+    font-size: 30px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid var(--color-light-gray2);
+    line-height: 1;
+}
+
+
+/* ========== HEADER ========== */
+.header {
+    width: 100%;
+    background-color: var(--color-white);
+    border-bottom: 2px solid var(--color-light-gray3);
+}
+
+.header-contents {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.name {
+    padding: 15px 40px;
+    color: var(--color-white);
+    background-color: var(--color-teal);
+    font-family: var(--font-heading);
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+}
+
+.navigation li {
+    padding-left: 15px;
+}
+
+.navigation li:not(:last-of-type) {
+    padding-right: 15px;
+    border-right: 1px solid var(--color-light-gray1);
+}
+
+.navigation a:link,
+.navigation a:visited {
+    color: var(--color-dark-gray1);
+    text-decoration: none;
+    transition: color .3s;
+}
+
+.navigation a:hover,
+.navigation a:focus {
+    color: var(--color-orange);
+}
+
+
+/* ========== MAIN CONTENTS ========== */
+.container {
+    width: 960px;
+    margin: 30px auto 100px;
+    padding: 30px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-light-gray2);
+}
+
+
+/* ========== FOOTER ========== */
+.footer {
+    width: 100%;
+    padding: 30px 10px 10px;
+    background-color: var(--color-dark-gray2);
+    border-top: 8px solid var(--color-teal);
+    text-align: center;
+    color: var(--color-white);
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    -webkit-box-shadow: 0 0 10px 3px rgba(0,0,0,0.4);
+    box-shadow: 0 0 10px 3px rgba(0,0,0,0.4);
+}
+
+/* ========== ABOUT ME ========== */
+.about-contents {
+    clear: both;
+    overflow: auto;
+}
+
+.my-photo {
+    margin: 0 20px 10px 0;
+    float: left;
+}
+
+/* ========== PORTFOLIO ========== */
+.portfolio-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-list li {
+    margin-right: 46px;
+    position: relative;
+}
+
+.portfolio-link {
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+.portfolio-link:hover {
+    opacity: .7;
+}
+
+.portfolio-list li:not(:last-of-type) {
+    margin-bottom: 30px;
+}
+
+.portfolio-title {
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    text-align: center;
+    font-size: 24px;
+    color: var(--color-white);
+    font-weight: normal;
+    background-color: var(--color-teal);
+    transition: background-color .3s;
+}
+
+.portfolio-link:hover .portfolio-title {
+    background-color: var(--color-orange);
+}
+
+/* ========== CONTACT ========== */
+.contact-item {
+    margin-bottom: 20px;
+}
+
+.contact-form label,
+.contact-form input {
+    display: block;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+}
+
+.input-text {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid var(--color-light-gray3);
+}
+
+.contact-form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid var(--color-light-gray3);
+}
+
+.submit-btn {
+    color: var(--color-white);
+    background-color: var(--color-teal);
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+    background-color: var(--color-orange);
+}
