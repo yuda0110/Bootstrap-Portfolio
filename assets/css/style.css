@@ -142,28 +142,20 @@ div.name {
 }
 
 /* ========== PORTFOLIO ========== */
-.portfolio-list {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.portfolio-list li {
-    margin-right: 46px;
-    position: relative;
-}
-
 .portfolio-link {
+    position: relative;
+    display: block;
     opacity: 1;
     transition: opacity .3s;
 }
 
-.portfolio-link:hover {
-    opacity: .7;
+/* Bootstrap class */
+.img-fluid {
+    width: 100%;
 }
 
-.portfolio-list li:not(:last-of-type) {
-    margin-bottom: 30px;
+.portfolio-link:hover {
+    opacity: .7;
 }
 
 .portfolio-title {
