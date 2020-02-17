@@ -97,8 +97,9 @@ div.name {
 
 
 /* ========== MAIN CONTENTS ========== */
+/* Bootstrap class */
 .container {
-    /*width: 960px;*/
+    max-width: 960px;
     margin: 30px auto 100px;
     padding: 30px;
     background-color: var(--color-white);
