@@ -99,11 +99,16 @@ div.name {
 /* ========== MAIN CONTENTS ========== */
 /* Bootstrap class */
 .container {
-    max-width: 960px;
     margin: 30px auto 100px;
     padding: 30px;
     background-color: var(--color-white);
     border: 1px solid var(--color-light-gray2);
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
 }
 
 
