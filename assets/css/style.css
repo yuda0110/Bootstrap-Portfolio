@@ -47,54 +47,75 @@ h1 {
 
 /* ========== HEADER ========== */
 .header {
-    width: 100%;
+    max-width: 100%;
     background-color: var(--color-white);
     border-bottom: 2px solid var(--color-light-gray3);
 }
 
-.header-contents {
-    width: 960px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Bootstrap class */
+.navbar {
+    padding: 0;
+    background-color: var(--color-white);
 }
 
-div.name {
-    padding: 15px 40px;
+/* Bootstrap class */
+@media (min-width: 992px) {
+    .navbar-expand-lg {
+        width: 960px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* Bootstrap class */
+.navbar-brand {
+    padding: .3125rem 1rem;
+}
+
+/* Bootstrap class */
+.navbar-light .navbar-brand {
+    color: var(--color-white);
+}
+
+nav .name {
+    /*padding: 15px 40px;*/
     color: var(--color-white);
     background-color: var(--color-teal);
     font-family: var(--font-heading);
-    font-size: 36px;
+    font-size: 30px;
     font-weight: bold;
 }
 
-.navigation {
-    list-style: none;
-    display: flex;
+/* Bootstrap class */
+.navbar-toggler {
+    margin-right: .75rem;
 }
 
-.navigation li {
-    padding-left: 15px;
+/* Bootstrap class */
+.navbar-collapse {
+    flex-grow: 0;
+    border-top: 1px solid var(--color-light-gray3);
+}
+/* Bootstrap class */
+@media (min-width: 992px) {
+    .navbar-collapse {
+        border-top: 0;
+    }
 }
 
-.navigation li:not(:last-of-type) {
-    padding-right: 15px;
-    border-right: 1px solid var(--color-light-gray1);
+/* Bootstrap class */
+.navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
-.navigation a:link,
-.navigation a:visited {
-    color: var(--color-dark-gray1);
-    text-decoration: none;
-    transition: color .3s;
+@media (min-width: 992px) {
+    /* Bootstrap class */
+    .nav-item:not(:last-of-type) {
+        border-right: 1px solid var(--color-light-gray1);
+    }
 }
-
-.navigation a:hover,
-.navigation a:focus {
-    color: var(--color-orange);
-}
-
 
 /* ========== MAIN CONTENTS ========== */
 /* Bootstrap class */
