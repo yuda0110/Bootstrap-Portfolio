@@ -42,7 +42,12 @@ const createFooter = () => {
   const footer = document.querySelector('.footer')
   const day = new Date()
   const year = day.getFullYear()
-  const footerHtml = `Copyright © ${year} Yuko Uda`
+  const footerHtml = `<div class="container">
+              <span>
+                  Copyright © ${year} Yuko Uda
+              </span>
+            </div>`
+
   if (footer) {
     footer.innerHTML = footerHtml
   }

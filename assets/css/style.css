@@ -119,7 +119,7 @@ nav .name {
 
 /* ========== MAIN CONTENTS ========== */
 /* Bootstrap class */
-.container {
+.container.my-container {
     margin: 30px auto 100px;
     padding: 30px;
     background-color: var(--color-white);
@@ -127,25 +127,19 @@ nav .name {
 }
 
 @media screen and (min-width: 992px) {
-    .container {
+    .container.my-container {
         max-width: 960px;
     }
 }
 
 
 /* ========== FOOTER ========== */
-.footer {
-    width: 100%;
-    padding: 30px 10px 10px;
+.my-footer {
     background-color: var(--color-dark-gray2);
     border-top: 8px solid var(--color-teal);
     text-align: center;
     color: var(--color-white);
     font-size: 12px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 100;
     -webkit-box-shadow: 0 0 10px 3px rgba(0,0,0,0.4);
     box-shadow: 0 0 10px 3px rgba(0,0,0,0.4);
 }
