@@ -36,10 +36,10 @@ h3 {
 }
 
 h1 {
-    margin-bottom: 30px;
+    margin-bottom: 1.6rem;
     color: var(--color-teal);
-    font-size: 30px;
-    padding-bottom: 20px;
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
     border-bottom: 3px solid var(--color-light-gray2);
     line-height: 1;
 }
@@ -83,7 +83,7 @@ nav .name {
     color: var(--color-white);
     background-color: var(--color-teal);
     font-family: var(--font-heading);
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -120,8 +120,8 @@ nav .name {
 /* ========== MAIN CONTENTS ========== */
 /* Bootstrap class */
 .container.my-container {
-    margin: 30px auto 100px;
-    padding: 30px;
+    margin: 1.8rem auto 5.5rem;
+    padding: 1.8rem;
     background-color: var(--color-white);
     border: 1px solid var(--color-light-gray2);
 }
@@ -139,7 +139,7 @@ nav .name {
     border-top: 8px solid var(--color-teal);
     text-align: center;
     color: var(--color-white);
-    font-size: 12px;
+    font-size: .75rem;
     -webkit-box-shadow: 0 0 10px 3px rgba(0,0,0,0.4);
     box-shadow: 0 0 10px 3px rgba(0,0,0,0.4);
 }
@@ -181,12 +181,12 @@ nav .name {
 
 .portfolio-title {
     width: 100%;
-    padding: 10px;
+    padding: .75rem;
     position: absolute;
-    bottom: 20px;
+    bottom: 1.2rem;
     left: 0;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: var(--color-white);
     font-weight: normal;
     background-color: var(--color-teal);
